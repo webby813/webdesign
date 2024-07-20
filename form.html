@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-grey">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="pictures/logo.png" alt="Logo" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="award.html">Award & Certificate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="exercise.html">Exercise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+                <div class="join-now-btn-container">
+                    <a class="btn btn-warning join-now-btn" href="form.html">Join Now!</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container form-container" style="background-color: whitesmoke; margin-top: 30px;">
+        <div class="w-80">
+            <h2 class="text-center" style="font-size: 40px;">Registration Form</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">Full Name *</label>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="birthDate" class="form-label">Birth Date</label>
+                    <input type="date" class="form-control" id="birthDate">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Gender</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail *</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number">
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address *</label>
+                    <input type="text" class="form-control mb-2" id="address1" placeholder="Street Address">
+                    <input type="text" class="form-control mb-2" id="address2" placeholder="Street Address Line 2">
+                    <input type="text" class="form-control mb-2" id="city" placeholder="City">
+                    <input type="text" class="form-control mb-2" id="state" placeholder="State / Province">
+                    <input type="text" class="form-control" id="postalCode" placeholder="Postal / Zip Code">
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="terms">
+                    <label class="form-check-label" for="terms">
+                        By checking this, I agree and consent to <span style="font-size: 25px; color: blue;margin-bottom: 30px">Terms of Service</span></a>
+                    </label>
+                </div>
+                <div class="d-grid">
+                    <button type="reset" class="btn btn-primary" style="border-radius: 30px; margin-bottom: 30px;">Register Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="mt-4">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Quick Access</h3>
+                <ul class="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="award.html">Award & Certification</a></li>
+                    <li><a href="events.html">Math Camp June 2024</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="exercise.html">Exercise</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Phone:</p>
+                <p>03-718171811</p>
+                <p>Email:</p>
+                <p>amc.neuc@newera.edu.my</p>
+                <h3>OFFICE HOURS</h3>
+                <p>Monday - Friday</p>
+                <p>8:30 am - 5:00 pm</p>
+            </div>
+            <div class="footer-content">
+                <h3>Location</h3>
+                <p>Blok B & C, Lot 5, Seksyen 10, Jalan Bukit,</p>
+                <p>43000 Kajang, Selangor.</p>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 New Era University College. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

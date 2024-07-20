@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Exercise</title>
+
+    <style>
+        .container-lg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .image-hover a {
+            display: block;
+        }
+
+        .image-hover img {
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto;
+            transition: transform 0.3s ease; /* Add transition for smooth scaling */
+        }
+
+        .image-hover img:hover {
+            transform: scale(1.04); /* Scale the image on hover */
+        }
+
+        .container-lg .row .col.text-center {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-grey">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="pictures/logo.png" alt="Logo" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="award.html">Award & Certificate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="exercise.html">Exercise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                </ul>
+                <div class="join-now-btn-container">
+                    <a class="btn btn-warning join-now-btn" href="form.html">Join Now!</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-lg">
+        <div class="row w-100">
+            <div class="col text-center image-hover">
+                <a href="papers\math_test.txt" download="test.txt"><img src="pictures/paper_example.png" alt="Example Paper"></a>
+            </div>
+            <div class="col text-center image-hover">
+                <a href="papers\math_test.txt" download="test.txt"><img src="pictures/paper_example.png" alt="Example Paper"></a>
+            </div>
+            <div class="col text-center image-hover">
+                <a href="papers\math_test.txt" download="papers\math_test.txt"><img src="pictures/paper_example.png" alt="Example Paper"></a>
+            </div>
+        </div>
+        
+        <div class="row w-100">
+            <div class="col text-center">2018</div>
+            <div class="col text-center">2019</div>
+            <div class="col text-center">2020</div>
+        </div>
+
+        <div class="row w-100">
+            <div class="col text-center image-hover">
+                <a href="papers\math_test.txt" download="test.txt"><img src="pictures/paper_example.png" alt="Example Paper"></a>
+            </div>
+            <div class="col text-center image-hover">
+                <a href="papers\math_test.txt" download="test.txt"><img src="pictures/paper_example.png" alt="Example Paper"></a>
+            </div>
+            <div class="col text-center image-hover">
+                <a href="papers\math_test.txt" download="test.txt"><img src="pictures/paper_example.png" alt="Example Paper"></a>
+            </div>
+        </div>
+
+        <div class="row w-100">
+            <div class="col text-center">2021</div>
+            <div class="col text-center">2022</div>
+            <div class="col text-center">2023</div>
+        </div>
+    </div>
+
+    <footer class="mt-4">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Quick Access</h3>
+                <ul class="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="award.html">Award & Certification</a></li>
+                    <li><a href="events.html">Math Camp June 2024</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="exercise.html">Exercise</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Phone:</p>
+                <p>03-718171811</p>
+                <p>Email:</p>
+                <p>amc.neuc@newera.edu.my</p>
+                <h3>OFFICE HOURS</h3>
+                <p>Monday - Friday</p>
+                <p>8:30 am - 5:00 pm</p>
+            </div>
+            <div class="footer-content">
+                <h3>Location</h3>
+                <p>Blok B & C, Lot 5, Seksyen 10, Jalan Bukit,</p>
+                <p>43000 Kajang, Selangor.</p>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 New Era University College. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

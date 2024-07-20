@@ -1,0 +1,36 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-container form {
+    font-size: 25px;
+}
+
+.form-container .form-label {
+    font-size: 30px;
+}
+
+.form-container .form-control {
+    font-size: 25px;
+}
+
+.form-container .form-check-label {
+    font-size: 25px;
+}
+
+.form-container .btn {
+    font-size: 25px;
+}
+
+.form-container .form-check-input {
+    width: 30px;
+    height: 30px;
+}
+
+.form-container .form-check-label {
+    font-size: 25px;
+    margin-left: 10px;
+}
