@@ -16,19 +16,23 @@ main{
 }
 
 .center-title {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto; /* Combines margin-top and margin-bottom for centering */
 
     font-size: 50px;
     color: #000000;
 
-    margin-top: 20px;
-    margin-bottom: 20px;
-
     word-spacing: 5px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    border: solid 0px;
+    max-width: 40%;
+    word-wrap: break-word; /* Forces text to wrap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .container{
     margin: 20px;
@@ -38,10 +42,10 @@ main{
     border-radius: 20px;
 }
 
+/* info table */
 .info-table{
-    margin: 20px;
-    /* margin-left: 200px;
-    margin-right: 200px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-color: rgb(230, 221, 221);
     display: flex;
     flex-wrap: wrap;
@@ -78,6 +82,7 @@ td, p{
     letter-spacing: 1px;
 }
 
+/* Schedule Table */
 .schedule-table {
     display: flex;
     justify-content: center;
@@ -90,24 +95,63 @@ td, p{
     font-family: Arial, sans-serif;
     table-layout: fixed;
 }
+
 .schedule-table th, .schedule-table td {
     padding: 30px;
     text-align: center;
     border: 1px solid #ddd;
     color: #000; /* Default black color */
 }
+
 .schedule-table th {
     background-color: #FFEB3B;
 }
+
 .schedule-table tr:nth-child(odd) {
     background-color: #FFFFFF;
 }
+
 .schedule-table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 .schedule-table caption {
     caption-side: top;
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px;
+}
+
+img{
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 0px;
+}
+
+/* Grid style */
+.container-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.image-hover a {
+    display: block;
+}
+
+.image-hover img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image-hover img:hover {
+    transform: scale(1.04);
+}
+
+.container-lg .row .col.text-center {
+    margin-bottom: 20px;
+    font-size: 30px;
 }

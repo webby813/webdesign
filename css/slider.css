@@ -41,13 +41,3 @@
         width: 100%;
     }
 }
-
-@media (max-width: 768px) {
-    .slider-frame {
-        max-width: 100%;
-    }
-
-    .img-container {
-        width: 100%;
-    }
-}
