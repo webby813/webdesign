@@ -8,15 +8,50 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/effect.css">
     <title>NEUC X AMC</title>
 
     <style>
-        body{
-            background-image: url("https://static.vecteezy.com/system/resources/previews/028/281/332/non_2x/colorful-block-puzzle-seamless-pattern-background-vector.jpg");
-            background-size: cover;
+        .row{
+            justify-content: space-between; 
+            display: flex;
+            align-items: center;
         }
-        main{
-            padding: 120px;
+
+        .row .card{
+            border-style: solid;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            padding: 20px;
+            width: 25rem;
+            height: 18rem;
+        }
+
+        .card-body .card-title{
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        .card-body .card-text{
+            text-align: left;
+            font-size: 20px;
+            word-spacing: 0px;
+            letter-spacing: 0px;
+        }
+
+        .carousel {
+            width: 100%; /* Adjust width as needed */
+            height: 800px; /* Adjust height as needed */
+        }
+
+        .carousel-inner {
+            height: 100%;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the container without distortion */
         }
     </style>
 </head>
@@ -44,65 +79,123 @@
         </div>
     </nav>
 
-    <div class="slider-frame">
-        <div class="slide-images">
-            <div class="img-container">
-                <img src="pictures/image.png" alt="Slide 1">
-            </div>
-            <div class="img-container">
-                <img src="pictures/AMC_pic.jpg" alt="Slide 2">
-            </div>
-            <div class="img-container">
-                <img src="pictures/AMC2_pic.jpg" alt="Slide 3">
-            </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="pictures/AMC2_pic.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="pictures/AMC3_pic.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="pictures/AMC_pic.jpg" alt="Third slide">
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
     </div>
 
     <main>
-        <h1 class="center-title">Introduction</h1>
-        <table class="info-table" style="width: 100%;">
-            <tr>
-                <td style="width: 50%;">
-                    <img style="display: block; margin: 0 auto; max-width: 100%; height: auto;" src="pictures/AMC3_pic.jpg">
-                </td>
-                <td style="width: 50%;">
-                    <h1>About New Era University Australian Mathematics Competition</h1>
-                    <br><br>
-                    <p>
-                        The Australian Mathematics Competition (AMC) is a prestigious, globally recognized event that gathers students from around the world to tackle 
-                        challenging mathematical problems. Esteemed for its high standards and international acclaim, the AMC provides a platform for young mathematicians 
-                        to test their skills and gain valuable experience in a competitive setting. Through participation, students have the opportunity to demonstrate 
-                        their exceptional mathematical abilities on an international stage, gaining recognition and boosting their confidence. Involvement in the AMC not 
-                        only sharpens students' problem-solving skills but also fosters a sense of camaraderie and academic enthusiasm within the university community.
-                    </p>
-                </td>
-            </tr>
-        </table>
+        <main>
+            <h1 class="center-title">Introduction</h1>
+            <div class="introduction-content">
+                <table class="info-table" style="width: 100%;">
+                    <tr>
+                        <td style="width: 50%;">
+                            <img style="display: block; margin: 0 auto; max-width: 100%; height: auto;" src="pictures/AMC3_pic.jpg">
+                        </td>
+                        <td style="width: 50%;">
+                            <h1>About New Era University Australian Mathematics Competition</h1>
+                            <br><br>
+                            <p>
+                                The Australian Mathematics Competition (AMC) is a prestigious, globally recognized event that gathers students from around the world to tackle 
+                                challenging mathematical problems. Esteemed for its high standards and international acclaim, the AMC provides a platform for young mathematicians 
+                                to test their skills and gain valuable experience in a competitive setting. Through participation, students have the opportunity to demonstrate 
+                                their exceptional mathematical abilities on an international stage, gaining recognition and boosting their confidence. Involvement in the AMC not 
+                                only sharpens students' problem-solving skills but also fosters a sense of camaraderie and academic enthusiasm within the university community.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Rest of your content -->
+        </main>
+        
         <div class="container-lg">
             <h1 class="center-title">Our Objectives</h1>
             <div class="row w-100">
-                <div class="col text-center image-hover">
-                    <img src="pictures/Achieve_Card.png"></a>
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Achieve</h5>
+                      <p class="card-text">
+                        Develop advanced mathematical skills by engaging with complex problems that challenge your understanding and require the application of various 
+                        techniques.
+                      </p>
+                    </div>
                 </div>
-                <div class="col text-center image-hover">
-                    <img src="pictures/Excellence_Card.png"></a>
+
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Recognition</h5>
+                      <p class="card-text">
+                        Earn awards and certificates that showcase your mathematical skills and dedication, enhancing your academic credentials and confidence.
+                      </p>
+                    </div>
                 </div>
-                <div class="col text-center image-hover">
-                    <img src="pictures/Expo_Card.png"></a>
+
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Thinking</h5>
+                      <p class="card-text">
+                        Enhance critical thinking and problem-solving skills with innovative and challenging questions.
+                      </p>
+                    </div>
                 </div>
             </div>
     
             <div class="row w-100">
-                <div class="col text-center image-hover">
-                    <img src="pictures/Recog_Card.png"></a>
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Excellence</h5>
+                      <p class="card-text">
+                        Cultivate a more strategic mindset and creativity in tackling mathematical problems.
+                    </p>
+                    </div>
                 </div>
-                <div class="col text-center image-hover">
-                    <img src="pictures/Thinking_Card.png"></a>
+
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Exposure</h5>
+                      <p class="card-text">
+                        Encourage strategic thinking and creativity in mathematical challenges.
+                    </p>
+                    </div>
                 </div>
-                <div class="col text-center image-hover">
-                    <img src="pictures/Cam_Card.png"></a>
+
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Camaraderie</h5>
+                      <p class="card-text">
+                        Build strategic thinking and creative problem-solving skills through challenging questions.
+                      </p>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="video-container">
+            <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/xfi-1hvWFGo?autoplay=1" frameborder="0"></iframe>
         </div>
 
         <h1 class="center-title" style="background-color: white; padding-top: 50px;">
@@ -111,7 +204,6 @@
                 <a href="form.html" title="Register now!"><img src="https://ppsms.umt.edu.my/wp-content/uploads/sites/191/2023/05/register-now-gif-3.gif" style="border-style: solid; border-radius: 20px; height: 200px;"></a>
             </div>
         </h1>
-        
     </main>
 
     <footer>
@@ -122,8 +214,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="award.html">Award & Certification</a></li>
                     <li><a href="events.html">Math Camp June 2024</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="exercise.html">Exercise</a></li>
+                    <li><a href="exercise.html">Events</a></li>
+                    <li><a href="about.html">Exercise</a></li>
                 </ul>
             </div>
             <div class="footer-content">
@@ -144,10 +236,46 @@
             
         </div>
         <div class="bottom-bar">
-            <p>&copy; 2024 New Era University College. All rights reserved.</p>
+            <p>&copy; 2024 WEBBY TEO WEI PIN. ALL RIGHT RESERVED.</p>
         </div>
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.card');
+        const introductionContent = document.querySelector('.introduction-content');
+        const centerTitles = document.querySelectorAll('.center-title');
+
+        function checkVisibility() {
+            const viewportHeight = window.innerHeight;
+
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                if (cardTop < viewportHeight * 0.8) {
+                    card.classList.add('visible');
+                }
+            });
+
+            const introTop = introductionContent.getBoundingClientRect().top;
+            if (introTop < viewportHeight * 0.8) {
+                introductionContent.classList.add('visible');
+            }
+
+            centerTitles.forEach(title => {
+                const titleTop = title.getBoundingClientRect().top;
+                if (titleTop < viewportHeight * 0.8) {
+                    title.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkVisibility);
+        checkVisibility();
+    });
+</script>
+
+
 </html>

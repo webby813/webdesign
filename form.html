@@ -37,7 +37,7 @@
     <div class="container form-container" style="background-color: whitesmoke; margin-top: 30px;">
         <div class="w-80">
             <h2 class="text-center" style="font-size: 40px;">Registration Form</h2>
-            <form>
+            <form id="registrationForm">
                 <div class="mb-3">
                     <label for="firstName" class="form-label">Full Name *</label>
                     <div class="row">
@@ -89,13 +89,13 @@
                     </label>
                 </div>
                 <div class="d-grid">
-                    <button type="reset" class="btn btn-primary" style="border-radius: 30px; margin-bottom: 30px;">Register Now</button>
+                    <button type="button" class="btn btn-primary" style="border-radius: 30px; margin-bottom: 30px;" onclick="validateAndSubmit()">Register Now</button>
                 </div>
             </form>
         </div>
     </div>
     
-    <footer class="mt-4">
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <h3>Quick Access</h3>
@@ -103,8 +103,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="award.html">Award & Certification</a></li>
                     <li><a href="events.html">Math Camp June 2024</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="exercise.html">Exercise</a></li>
+                    <li><a href="exercise.html">Events</a></li>
+                    <li><a href="about.html">Exercise</a></li>
                 </ul>
             </div>
             <div class="footer-content">
@@ -122,12 +122,40 @@
                 <p>Blok B & C, Lot 5, Seksyen 10, Jalan Bukit,</p>
                 <p>43000 Kajang, Selangor.</p>
             </div>
+            
         </div>
         <div class="bottom-bar">
-            <p>&copy; 2024 New Era University College. All rights reserved.</p>
+            <p>&copy; 2024 WEBBY TEO WEI PIN. ALL RIGHT RESERVED.</p>
         </div>
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        function validateAndSubmit() {
+            var requiredFields = [
+                document.getElementById('firstName').value,
+                document.getElementById('lastName').value,
+                document.getElementById('email').value,
+                document.getElementById('address1').value,
+                document.getElementById('city').value,
+                document.getElementById('state').value,
+                document.getElementById('postalCode').value
+            ];
+
+            var allFilled = requiredFields.every(function(field) {
+                return field.trim() !== '';
+            });
+
+            if (!allFilled || !document.getElementById('terms').checked) {
+                alert('Please fill in all required fields and agree to the terms of service.');
+            } else {
+                alert('Registration successful!');
+                setTimeout(function() {
+                    document.getElementById('registrationForm').reset();
+                    window.location.reload();
+                }, 100);
+            }
+        }
+    </script>
 </body>
 </html>
