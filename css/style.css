@@ -17,12 +17,12 @@ main{
 }
 
 .center-title {
-    padding: 20px;
+    padding: 18px;
     text-align: center;
     display: block;
-    margin: 20px auto; /* Combines margin-top and margin-bottom for centering */
+    margin: 14px auto; /* Combines margin-top and margin-bottom for centering */
 
-    font-size: 50px;
+    font-size: 40px;
     color: #000000;
 
     word-spacing: 5px;
@@ -72,14 +72,14 @@ td {
 }
 
 td, h1{
-    font-size: 28px;
+    font-size: 20px;
     line-height: 30px;
     margin-right: 50px;
 }
 
 td, p{
     margin-right: 50px;
-    font-size: 24px;
+    font-size: 16px;
     text-align: justify;
     line-height: 25px;
     word-spacing: 5px;
