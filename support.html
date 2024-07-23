@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/effect.css">
     <title>NEUC X AMC</title>
     <title>Support</title>
     <style>
@@ -15,11 +14,19 @@
             text-align: left;
             font-size: 26px;
             vertical-align: text-top;
-            
         }
         .container .row .col h2{
             color: #F39D1C;
             margin-top: 12px;
+        }
+        .form-group{
+            margin-top: 20px;
+        }
+        .form-group label{
+            font-size: 20px;
+            display: flex;
+            justify-content: left;
+            align-items: start;
         }
     </style>
 </head>
@@ -81,8 +88,28 @@
         </div>
     </div>
 
-    <div class="container text-center" style="display: flex; justify-content: center; align-items: center; background-color: whitesmoke; margin-top: 20px;">
-
+    <div class="container text-center" style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+        <div class="col-md-9">
+            <div class="card" style="border-radius: 16px;">
+                <div class="card-body">
+                    <h2 class="card-title">Share your Feedback</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="feedback">Tell us if you have any questions, our department will reply your worry as soon as possible!</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ex. name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Description</label>
+                            <textarea class="form-control" id="feedback" rows="3" placeholder="ex. Is there any registration fee?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block" style="margin-top: 20px;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -119,6 +146,6 @@
         </div>
     </footer>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
 </body>
 </html>

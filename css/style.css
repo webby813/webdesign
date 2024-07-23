@@ -179,6 +179,7 @@ iframe {
     height: 850px;
     width: 100%;
     margin-bottom: 30px;
+    position: relative; /* 保持这个属性 */
 }
 
 .text-bottom-left {
@@ -191,4 +192,14 @@ iframe {
     font-size: 100px;
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
+    max-width: calc(100% - 80px); /* 防止文本溢出容器，减去左右边距 */
+    box-sizing: border-box; /* 确保内边距包含在宽度内 */
+}
+
+/* 添加一个媒体查询来处理不同屏幕尺寸 */
+@media (max-width: 768px) {
+    .text-bottom-left {
+        font-size: 50px;
+        padding: 20px;
+    }
 }
