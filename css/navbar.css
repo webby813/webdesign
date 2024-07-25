@@ -19,7 +19,6 @@
     font-size:  16px;
     margin-left: 10%;
     margin-right: 10%;
-    
 }
 
 .navbar ul {
@@ -72,23 +71,22 @@
 
 /* Media queries */
 @media (max-width: 768px) {
-    .navbar-nav { /* Target the navigation items */
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center them horizontally */
-      justify-content: flex-start; /* Align to top of container */
-      margin: 0 auto; /* Center horizontally within the navbar */
-      padding-top: 1em; /* Add some top padding */
+    .navbar-nav { 
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0 auto;
+      padding-top: 1em; 
     }
   
-    .navbar-nav .nav-item { /* Adjust margins for stacked items */
+    .navbar-nav .nav-item {
       margin: 0.5em 0;
     }
   
-    .join-now-btn-container { /* Move join button below navigation on small screens */
+    .join-now-btn-container {
       margin-top: 1em;
     }
   }
-  
 
 .join-now-btn-container {
     display: flex;
