@@ -20,7 +20,7 @@ main{
     padding: 18px;
     text-align: center;
     display: block;
-    margin: 14px auto; /* Combines margin-top and margin-bottom for centering */
+    margin: 14px auto;
 
     font-size: 40px;
     color: #000000;
@@ -30,7 +30,7 @@ main{
     border-radius: 20px;
     border: solid 0px;
     max-width: 40%;
-    word-wrap: break-word; /* Forces text to wrap */
+    word-wrap: break-word;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -104,7 +104,7 @@ td, p{
     padding: 30px;
     text-align: center;
     border: 1px solid #ddd;
-    color: #000; /* Default black color */
+    color: #000;
 }
 
 .schedule-table th {
@@ -169,8 +169,8 @@ img{
     padding: 80px;
 }
 iframe {
-    width: 1600px; /* Adjust the width as needed */
-    height: 780px; /* Adjust the height as needed */
+    width: 1600px;
+    height: 780px;
 }
 
 .custom-container {
@@ -179,7 +179,7 @@ iframe {
     height: 850px;
     width: 100%;
     margin-bottom: 30px;
-    position: relative; /* 保持这个属性 */
+    position: relative;
 }
 
 .text-bottom-left {
@@ -192,14 +192,55 @@ iframe {
     font-size: 100px;
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
-    max-width: calc(100% - 80px); /* 防止文本溢出容器，减去左右边距 */
-    box-sizing: border-box; /* 确保内边距包含在宽度内 */
+    max-width: calc(100% - 80px);
+    box-sizing: border-box;
 }
 
-/* 添加一个媒体查询来处理不同屏幕尺寸 */
 @media (max-width: 768px) {
     .text-bottom-left {
         font-size: 50px;
         padding: 20px;
     }
+}
+
+.row{
+    justify-content: space-between; 
+    display: flex;
+    align-items: center;
+}
+
+.row .card{
+    border-style: solid;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 20px;
+    width: 25rem;
+    height: 18rem;
+}
+
+.card-body .card-title{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.card-body .card-text{
+    text-align: left;
+    font-size: 16pxpx;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+}
+
+.carousel {
+    width: 100%;
+    height: 800px; 
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
